@@ -1,4 +1,5 @@
 import React from 'react';
+import illustration from '../images/illustration.png'; // Update the path if necessary
 
 const WorkWithUs = () => {
   return (
@@ -41,13 +42,17 @@ const WorkWithUs = () => {
         </form>
       </div>
 
-      {/* Right Side - Illustration */}
-      <div className="flex justify-center items-center w-full lg:w-1/2 bg-pink-500">
-        {/* Replace this with your actual illustration/image */}
-        <span className="text-black text-lg">DESKTOP ILLUSTRATION</span>
+      {/* Right Side - Image */}
+      <div className="flex justify-center items-center w-full lg:w-1/2 bg-pink-200">
+        <img
+          src={illustration}
+          alt="Illustration"
+          className="w-full h-auto object-cover "
+        />
       </div>
     </div>
   );
 };
 
 export default WorkWithUs;
+
